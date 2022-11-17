@@ -49,16 +49,22 @@ ul {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 
 .section {
@@ -254,17 +260,7 @@ img {
   cursor: pointer;
 }
 
-.our-features__list {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
-}
-
 .our-features__card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
   margin-bottom: 30px;
   background-color: var(--background-color-light);
 }
