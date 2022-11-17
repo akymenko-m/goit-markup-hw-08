@@ -1,0 +1,27 @@
+.our-features__list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.our-features__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-color-light);
+}
+
+.our-features__card-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.our-features__description {
+    color: var(--secondary-text-color);
+    line-height: 1.71;
+}

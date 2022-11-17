@@ -1,0 +1,24 @@
+.what-we-do__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.what-we-do__item {
+    position: relative;
+}
+
+.what-we-do__desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 27px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
