@@ -1,3 +1,9 @@
+.what-we-do {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
 .what-we-do__list {
     display: flex;
     justify-content: space-between;
