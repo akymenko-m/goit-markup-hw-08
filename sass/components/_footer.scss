@@ -5,12 +5,26 @@
 }
 
 .footer__container {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: baseline;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 60px;
+        align-items: baseline;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        row-gap: 0;
+    }
 }
 .footer__address {
     text-align: center;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 .footer__logo {
     display: inline-block;
@@ -45,8 +59,13 @@
 .follow-for-us {
     margin: 60px 0;
     text-align: center;
-    // width: 206px;
-    // margin-left: 70px;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+        margin: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .follow-for-us__title {
@@ -57,7 +76,11 @@
     text-transform: uppercase;
     color: var(--white-color);
 }
-
+.footer__socials-list {
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
+}
 .footer__socials {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white-color);
@@ -67,12 +90,13 @@
 
 .form-submit {
     text-align: center;
-    // margin-left: 93px;
 }
 
 .form-submit__block {
-    display: flex;
-    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 12px;
+    }
 }
 
 .form-submit__label {
@@ -87,10 +111,8 @@
 .form-summit__input {
     display: block;
     margin-bottom: 20px;
+    width: 100%;
     max-width: 450px;
-    // width: 100%;
-    // width: 358px;
-    // padding-left: 16px;
     padding: 15px 0 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -105,10 +127,17 @@
         line-height: calc(20/16);
         color: rgba(255, 255, 255, 0.6);
     }
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        max-width: 358px;
+    }
 }
 
 .form-submit__btn {
-    // margin-left: 12px;
+    margin: 0 auto;
     padding: 10px 26px;
     min-width: 200px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -117,7 +146,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 0;
     color: var(--white-color);
     background-color: var(--accent-color);
     font-family: inherit;

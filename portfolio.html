@@ -19,25 +19,24 @@
 <body>
     <header class="header">
         <div class="header__container container">
+            <a href="#" class="header__logo logo"><span class="header__logo-accent logo-accent">Web</span>Studio</a>
             <nav class="header__nav">
-                <a href="#" class="header__logo logo"><span class="header__logo-accent logo-accent">Web</span>Studio</a>
                 <ul class="header__site-nav">
-                    <li class="header__item item"><a href="./index.html" class="header__link">Студія</a></li>
-                    <li class="header__item item"><a href="./portfolio.html" class="header__link current">Портфоліо</a>
-                    </li>
-                    <li class="header__item item"><a href="/" class="header__link">Контакти</a></li>
+                    <li class="header__item"><a href="./index.html" class="header__link">Студія</a></li>
+                    <li class="header__item"><a href="./portfolio.html" class="header__link current">Портфоліо</a></li>
+                    <li class="header__item"><a href="/" class="header__link">Контакти</a></li>
                 </ul>
             </nav>
 
             <ul class="header__contacts-list">
-                <li class="header__contacts-item item">
+                <li class="header__contacts-item">
                     <a href="mailto:info@devstudio.com" class="header__contacts-link">
                         <svg class="header__contacts-icons" width="16" height="12">
                             <use href="./images/symbol-defs-upd.svg#envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="header__contacts-item item">
+                <li class="header__contacts-item">
                     <a href="tel:+380961111111" class="header__contacts-link">
                         <svg class="header__contacts-icons" width="10" height="16">
                             <use href="./images/symbol-defs-upd.svg#smartphone"></use>
@@ -45,6 +44,13 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+
+            <button type="button" class="header__mob-menu is-open" data-menu-open>
+                <svg width="40" height="40">
+                    <use class="header__menu--open" href="./images/symbol-defs-upd.svg#menu"></use>
+                    <use class="header__menu--close" href="./images/symbol-defs-upd.svg#close"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -262,7 +268,7 @@
 
             <div class="follow-for-us">
                 <p class="follow-for-us__title">приєднуйтесь</p>
-                <ul class="socials-list">
+                <ul class="socials-list footer__socials-list">
                     <li class="socials-list__item">
                         <a href="" class="footer__socials socials-list__link">
                             <svg class="social-link" width="20" height="20">
