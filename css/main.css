@@ -459,7 +459,7 @@ img {
 .hero {
   width: 100%;
   background-color: var(--background-color-hero);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bg/hero-bg-mobile.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 118px;
@@ -468,7 +468,7 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero .box {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bg/hero-bg-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg-mobile@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -928,6 +928,10 @@ img {
   }
 }
 
+.portfolio__filter-item:nth-child(3) {
+  margin-right: 40px;
+}
+
 .portfolio__button {
   padding: 6px 22px;
   border-radius: 4px;
@@ -935,7 +939,7 @@ img {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.625;
   text-align: center;
   border: 0;
   cursor: pointer;
