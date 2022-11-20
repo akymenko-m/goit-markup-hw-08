@@ -131,9 +131,7 @@
     width: 100vw;
     height: 100vh;
     top: 0;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 40px;
+    padding: 48px 40px;
     background-color: var(--white-color);
     display: flex;
     flex-direction: column;
@@ -181,6 +179,10 @@
     }
 }
 
+.mob-menu__link.current {
+    color: var(--accent-color);
+}
+
 .mob-menu__contacts-item:not(:last-child) {
     margin-bottom: 20px;
     @media screen and (min-width: 480px) {
@@ -190,7 +192,7 @@
 
 .mob-menu__tel {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 26px;
     line-height: calc(40/34);
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -212,12 +214,18 @@
 .mob-menu__socials {
     margin-top: 20px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
     @media screen and (min-width: 480px) {
         margin-top: 64px;
         position: relative;
-        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+.mob-menu__socials-item {
+    @media screen and (max-width: 480px) {
+        width: calc((100% - 20px) / 2);
     }
 }
 
