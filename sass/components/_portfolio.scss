@@ -85,7 +85,6 @@
 }
 
 .portfolio__item-desc {
-    height: 294px;
     position: relative;
     overflow: hidden;
     @media screen and (min-width:480px) {
@@ -123,6 +122,7 @@
     text-align: start;
     padding: 20px 24px;
     border: 1px solid var(--border-item-content);
+    border-top: 0;
 }
 
 .portfolio__project-name {
