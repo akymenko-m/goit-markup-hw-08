@@ -5,24 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+  <link rel="manifest" href="./public/site.webmanifest">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
-  <title>Студія</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+  <title>WebStudio</title>
 </head>
 
 <body>
   <header class="header">
     <div class="header__container container">
-      <a href="#" class="header__logo logo"><span class="header__logo-accent logo-accent">Web</span>Studio</a>
+      <a href="/" class="header__logo logo"><span class="header__logo-accent logo-accent">Web</span>Studio</a>
       <nav class="header__nav">
         <ul class="header__site-nav">
           <li class="header__item"><a href="./index.html" class="header__link current">Студія</a></li>
           <li class="header__item"><a href="./portfolio.html" class="header__link">Портфоліо</a></li>
-          <li class="header__item"><a href="/" class="header__link">Контакти</a></li>
+          <li class="header__item"><a href="#footer" class="header__link">Контакти</a></li>
         </ul>
       </nav>
 
@@ -57,11 +65,11 @@
         </svg>
       </button>
 
-      <nav class="mob-menu__nav">
+      <nav class="mob-menu__nav mob-list">
         <ul class="mob-menu__site-nav">
           <li class="mob-menu__item"><a href="./index.html" class="mob-menu__link current">Студія</a></li>
           <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link">Портфоліо</a></li>
-          <li class="mob-menu__item"><a href="/" class="mob-menu__link">Контакти</a></li>
+          <li class="mob-menu__item"><a href="#footer" class="mob-menu__link">Контакти</a></li>
         </ul>
       </nav>
 
@@ -79,16 +87,20 @@
 
         <ul class="mob-menu__socials">
           <li class="mob-menu__socials-item">
-            <a href="" class="mob-menu__socials-link">Instagram</a>
+            <a href="https://www.instagram.com/" class="mob-menu__socials-link" target="_blank"
+              rel="noreferrer noopener">Instagram</a>
           </li>
           <li class="mob-menu__socials-item">
-            <a href="" class="mob-menu__socials-link">Twitter</a>
+            <a href="https://twitter.com/" class="mob-menu__socials-link" target="_blank"
+              rel="noreferrer noopener">Twitter</a>
           </li>
           <li class="mob-menu__socials-item">
-            <a href="" class="mob-menu__socials-link">Facebook</a>
+            <a href="https://uk-ua.facebook.com/" class="mob-menu__socials-link" target="_blank"
+              rel="noreferrer noopener">Facebook</a>
           </li>
           <li class="mob-menu__socials-item">
-            <a href="" class="mob-menu__socials-link">LinkedIn</a>
+            <a href="https://www.linkedin.com/" class="mob-menu__socials-link" target="_blank"
+              rel="noreferrer noopener">LinkedIn</a>
           </li>
         </ul>
       </div>
@@ -179,6 +191,7 @@
     <section class="our-team section">
       <div class="our-team__container container">
         <h2 class="our-team__title section-title">Наша команда</h2>
+
         <ul class="our-team__list">
           <li class="our-team__item">
             <picture>
@@ -193,30 +206,34 @@
             <div class="our-team__member">
               <h3 class="our-team__name">Ігор Дем'яненко</h3>
               <p lang="en" class="our-team__position">Product Designer</p>
+
               <ul class="socials-list">
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener" class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://uk-ua.facebook.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#linkedin"></use>
                     </svg>
@@ -225,6 +242,7 @@
               </ul>
             </div>
           </li>
+
           <li class="our-team__item">
             <picture>
               <source srcset="./images/team/team2-270.jpg 1x,
@@ -238,30 +256,34 @@
             <div class="our-team__member">
               <h3 class="our-team__name">Ольга Рєпіна</h3>
               <p lang="en" class="our-team__position">Frontend Developer</p>
+
               <ul class="socials-list">
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener" class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://uk-ua.facebook.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#linkedin"></use>
                     </svg>
@@ -270,6 +292,7 @@
               </ul>
             </div>
           </li>
+
           <li class="our-team__item">
             <picture>
               <source srcset="./images/team/team3-270.jpg 1x,
@@ -283,38 +306,44 @@
             <div class="our-team__member">
               <h3 class="our-team__name">Микола Тарасов</h3>
               <p lang="en" class="our-team__position">Marketing</p>
+
               <ul class="socials-list">
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener" class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://uk-ua.facebook.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#linkedin"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
+
             </div>
           </li>
+
           <li class="our-team__item">
             <picture>
               <source srcset="./images/team/team4-270.jpg 1x,
@@ -328,30 +357,34 @@
             <div class="our-team__member">
               <h3 class="our-team__name">Михайло Єрмаков</h3>
               <p lang="en" class="our-team__position">UI Designer</p>
+
               <ul class="socials-list">
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener" class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://uk-ua.facebook.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials-list__item">
-                  <a href="" class="socials-list__link">
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
+                    class="socials-list__link">
                     <svg class="socials-list__icon" width="20" height="20">
                       <use href="./images/symbol-defs-upd.svg#linkedin"></use>
                     </svg>
@@ -415,14 +448,14 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="footer__container container">
       <address class="footer__address">
         <a href="#" class="footer__logo logo"><span class="footer__logo-accent logo-accent">Web</span>Studio</a>
         <ul class="footer__address-list">
           <li class="footer__address-item">
-            <a class="footer__address-link footer__address-location"
-              href="https://goo.gl/maps/xuP6qKPyt2nnFhnc6">м.Київ, пр-т Лесі Українки, 26</a>
+            <a class="footer__address-link footer__address-location" href="https://goo.gl/maps/xuP6qKPyt2nnFhnc6"
+              target="_blank" rel="noreferrer noopener">м.Київ, пр-т Лесі Українки, 26</a>
           </li>
           <li class="footer__address-item">
             <a class="footer__address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -437,28 +470,32 @@
         <p class="follow-for-us__title">приєднуйтесь</p>
         <ul class="socials-list footer__socials-list">
           <li class="socials-list__item">
-            <a href="" class="footer__socials socials-list__link">
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
+              class="footer__socials socials-list__link">
               <svg class="social-link" width="20" height="20">
                 <use href="./images/symbol-defs-upd.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list__item">
-            <a href="" class="footer__socials socials-list__link">
+            <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
+              class="footer__socials socials-list__link">
               <svg class="social-link" width="20" height="20">
                 <use href="./images/symbol-defs-upd.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list__item">
-            <a href="" class="footer__socials socials-list__link">
+            <a href="https://uk-ua.facebook.com/" target="_blank" rel="noreferrer noopener"
+              class="footer__socials socials-list__link">
               <svg class="social-link" width="20" height="20">
                 <use href="./images/symbol-defs-upd.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list__item">
-            <a href="" class="footer__socials socials-list__link">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
+              class="footer__socials socials-list__link">
               <svg class="social-link" width="20" height="20">
                 <use href="./images/symbol-defs-upd.svg#linkedin"></use>
               </svg>
@@ -470,7 +507,7 @@
       <form name="form-submit" action="#" class="form-submit">
         <label for="email" class="form-submit__label">Підпишіться на розсилку</label>
         <div class="form-submit__block">
-          <input type="email" name="email" placeholder="E-mail" id="email" class="form-summit__input">
+          <input type="email" name="email" placeholder="E-mail" id="email" class="form-summit__input" required>
           <button class="form-submit__btn" type="submit">Підписатися
             <svg class="form-submit__icon-send" width="24" height="24">
               <use href="./images/symbol-defs-upd.svg#icon-send"></use>
@@ -480,6 +517,7 @@
       </form>
     </div>
   </footer>
+
   <!-- modal window -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal-window">
@@ -493,7 +531,7 @@
       <form class="modal-form">
         <label for="name" class="modal-form__label">Ім'я</label>
         <div class="modal-form__input-field">
-          <input type="text" name="name" id="name" class="modal-form__input input">
+          <input type="text" name="name" id="name" class="modal-form__input input" required>
           <svg class="modal-form__input-icon" width="18" height="18">
             <use href="./images/symbol-defs-upd.svg#person-black"></use>
           </svg>
@@ -501,7 +539,7 @@
 
         <label for="phone" class="modal-form__label">Телефон</label>
         <div class="modal-form__input-field">
-          <input type="tel" name="phone" id="phone" class="modal-form__input input">
+          <input type="tel" name="phone" id="phone" class="modal-form__input input" required>
           <svg class="modal-form__input-icon" width="18" height="18">
             <use href="./images/symbol-defs-upd.svg#phone-black"></use>
           </svg>
@@ -509,17 +547,17 @@
 
         <label for="email" class="modal-form__label">Пошта</label>
         <div class="modal-form__input-field">
-          <input type="email" name="email" id="email" class="modal-form__input input">
+          <input type="email" name="email" id="email" class="modal-form__input input" required>
           <svg class="modal-form__input-icon" width="18" height="18">
             <use href="./images/symbol-defs-upd.svg#email-black"></use>
           </svg>
         </div>
 
         <label for="user-comment" class="modal-form__label">Коментар</label>
-        <textarea name="user-comment" id="user-comment" class="modal-form__text input"
+        <textarea name="message" id="user-comment" class="modal-form__text input"
           placeholder="Введіть текст"></textarea>
         <div class="modal-form__checkbox-block">
-          <input type="checkbox" class="modal-form__input-check visually-hidden" name="contract-terms"
+          <input type="checkbox" class="modal-form__input-check visually-hidden" name="terms" value="true" required
             id="contract-terms" />
           <label for="contract-terms" class="modal-form__check-text">
             <span class="modal-form__icon-check"><svg width="15" height="12">
@@ -533,8 +571,11 @@
       </form>
     </div>
   </div>
-  <script src="./mobile-menu.js"></script>
-  <script src="./modal.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+  <script src="./mobile-menu.js" type="module"></script>
+  <script src="./modal.js" type="module"></script>
+  <script src="./footer-submit.js" type="module"></script>
 </body>
 
 </html>
