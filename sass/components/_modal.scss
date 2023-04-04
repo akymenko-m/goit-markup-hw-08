@@ -218,6 +218,10 @@
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition: transform 300ms ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .scroll-hidden {
