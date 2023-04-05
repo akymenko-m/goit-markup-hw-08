@@ -60,7 +60,7 @@ function handleSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === '' || name.value === '' || phone.value === '') {
-    return alert('Будь ласка заповніть усі поля');
+    return notyf.error('Будь ласка заповніть усі поля');
   }
 
   const clientRequest = {
